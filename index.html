@@ -8,18 +8,26 @@
 </head>
 <body>
   <header class="header">
-    <h1 class="logo">Welecome to APP_NAME</h1>
+    <h1 class="logo">Welcome to the Quiz!</h1>
     <!-- 어플리케이션 개요/설명 -->
     <p class="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
     <!-- 명예의 전당 -->
     <div class="hall-of-fame">
       <h2>명예의 전당</h2>
-      <ol class="ranking">
-        <li class="ranker">${name} ${score}</li>
-        <li class="ranker">${name} ${score}</li>
-        <li class="ranker">${name} ${score}</li>
-        <li class="ranker">${name} ${score}</li>
-      </ol>
+      <table id = "high-score" class="ranking">
+        <thead>
+          <tr>
+            <th class="ranker">Rank</th>
+            <th class="ranker">Username</th>
+            <th class="ranker">Score</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Username</td>
+            <td>Score</td>
+          </tr>
+        </thead>
+      </table>
     </div>
   </header>
 
@@ -63,7 +71,7 @@
     </section>
     <!-- <section class="quiz-category">
       <h2 class="a11y-hidden">퀴즈 카테고리</h2>
-      
+
       <ul class="category-list">
         <li class="category">
           <label for="category-id">HTML</label>
@@ -86,20 +94,20 @@
       <!-- 점수 목록 -->
       <ul class="score-list">
         <li class="score">
+          <input type="radio" id="score-id" name="score">
           <label for="score-id">100</label>
-          <input type="radio" id="score-id" name="score">
         </li>
         <li class="score">
+          <input type="radio" id="score-id" name="score">
           <label for="score-id">50</label>
-          <input type="radio" id="score-id" name="score">
         </li>
         <li class="score">
+          <input type="radio" id="score-id" name="score">
           <label for="score-id">25</label>
-          <input type="radio" id="score-id" name="score">
         </li>
         <li class="score">
-          <label for="score-id">10</label>
           <input type="radio" id="score-id" name="score">
+          <label for="score-id">10</label>
         </li>
       </ul>
     </section>
@@ -117,23 +125,23 @@
       <article class="quiz">
         <h3 class="quiz-heading">${Category} ${n}점 문제</h3>
         <div class="wrapper">
-          <p class="quiz-description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-          <ul class="choice-list">
-            <li class="choice">
-              <label for="choice-id">A</label>
-              <input type="radio" id="choice-id" name="choice">
+          <!-- <p class="quiz-description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p> -->
+          <ul class="list score-list">
+            <li class="score">
+              <input type="radio" id="score100" name="point-card">
+              <label for="score100">A</label>
             </li>
-            <li class="choice">
-              <label for="choice-id">B</label>
-              <input type="radio" id="choice-id" name="choice">
+            <li class="score">
+              <input type="radio" id="score50" name="point-card">
+              <label for="score50">B</label>
             </li>
-            <li class="choice">
-              <label for="choice-id">C</label>
-              <input type="radio" id="choice-id" name="choice">
+            <li class="score">
+              <input type="radio" id="score25" name="point-card">
+              <label for="score25">C</label>
             </li>
-            <li class="choice">
-              <label for="choice-id">D</label>
-              <input type="radio" id="choice-id" name="choice">
+            <li class="score">
+              <input type="radio" id="score10" name="point-card">
+              <label for="score10">D</label>
             </li>
           </ul>
         </div>

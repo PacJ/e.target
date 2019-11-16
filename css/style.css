@@ -2,19 +2,87 @@
 *::before,
 * {
     box-sizing: border-box;
+    color: black;
 }
+
+body {
+    background-color: lightcyan;
+}
+
+.header, .main-content {
+    margin: 0 auto;
+    width: 940px;
+}
+
+.a11y-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+}
+
+.header {
+    text-align: center;
+}
+
 ul, ol {
     list-style: none;
 }
+
+.logo, .description {
+    text-align: center;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.hall-of-fame {
+    width: 940px;
+    margin-top: 10px;
+    color: black;
+    background-color: #fff;
+    text-align: center;
+}
+
+.hall-of-fame > h2 {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.ranker {
+    list-style-type: upper-roman;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: black;
+    width: 300px;
+}
+
+.main-content {
+    position: relative;
+}
+
+.score-board {
+    border: 1px solid black;
+    position: fixed;
+    right: 0;
+}
+
 .category-list {
     display: flex;
     justify-content: space-between;
 }
+
 .category-list > li {
     position: relative;
     flex-basis: 30%;
     height: 400px;
 }
+
 .category-list input[type="radio"] {
     position: absolute;
     top: 1px;
@@ -22,6 +90,7 @@ ul, ol {
     width: 1px;
     height: 1px;
 }
+
 .category-list label {
     position: absolute;
     top: 0;
@@ -32,6 +101,23 @@ ul, ol {
     border: 1px solid #333;
     background-color: #fff;
 }
+
+.quiz-start {
+    display: block;
+    margin: 40px auto;
+    line-height: 50px;
+    width: 200px;
+    height: 50px;
+}
+
 .category-list input[type="radio"]:checked + label {
     border: 1px solid red;
+}
+
+.score-list label {
+    background-color: yellow;
+    position: absolute;
+    /* text-align: center; */
+    /* top: 0;
+    left: 0; */
 }
