@@ -132,6 +132,9 @@ body {
   backface-visibility: hidden;
   background: whitesmoke;
 }
+.score-list {
+  padding-bottom: 20px;
+}
 .wrapper {
   text-align: center;
 }
@@ -150,8 +153,19 @@ body {
 .quiz-start:hover {
   background: lightblue;
 }
+<<<<<<< HEAD
 .error {
   display: none;
+=======
+.select-error {
+  display: none;
+  color: red;
+  font-weight: 500;
+}
+.score-error {
+  display: none;
+  text-align: center;
+>>>>>>> a11d8e196fca75163bde72e87c8593a21e1a2d03
   color: red;
   font-weight: 500;
 }
@@ -175,17 +189,28 @@ body {
   margin-top: 0;
 }
 .quiz-description {
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
   padding: 1rem 3rem 1rem 3rem;
   text-align: left;
   margin: 0 auto;
   background-color: lightgoldenrodyellow;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  /* font-weight: 600; */
 }
+<<<<<<< HEAD
 code {
   font-size: 1.6rem;
   line-height: 3rem;
   font-weight: 600;
 }
+=======
+/* code {
+  font-size: 1.6rem;
+  line-height: 3rem;
+  font-weight: 600;
+} */
+>>>>>>> a11d8e196fca75163bde72e87c8593a21e1a2d03
 .choice-list {
   /* background: skyblue; */
   margin: 0;

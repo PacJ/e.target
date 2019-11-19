@@ -282,7 +282,7 @@
       "category": "Javascript",
       "point": 50,
       "question": "아래 코드이 실행 결과는?<h4>",
-      "description": "<code>const Animal = (function () {\n  let _animal = '';\n\n  function Animal(name) {\n    _animal = name;\n  }\n\n  Animal.prototype.bark = function () {\n    console.log(&{_animal} says WOOF!);\n  }\n  return Animal;\n}());\n\nconst dog = new Animal(doggy);\ndog.bark();</code>",
+      "description": "const Animal = (function () {\n  let _animal = '';\n\n  function Animal(name) {\n    _animal = name;\n  }\n\n  Animal.prototype.bark = function () {\n    console.log(${_animal} says WOOF!);\n  }\n  return Animal;\n}());\n\nconst dog = new Animal(doggy);\ndog.bark();",
       "choice": [
         "doggy says WOOF!",
         "SyntaxError",
