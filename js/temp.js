@@ -1,5 +1,5 @@
 /* ------------------ CONSTANT ------------------ */
-const URL = 'http://localhost:5000';
+const URL = 'http://localhost:8000';
 
 /* ------------------ DOM ------------------ */
 const $ranking = document.querySelector('.ranking');
@@ -175,7 +175,7 @@ const popup = type => {
     포인트를 모두 소진하였습니다.<br>
     분발하세요.</p>
     <div class="btn-group">
-      <button class="continue">OK</button>
+      <button class="all-in">OK</button>
     </div>`;
   } else {
     html = `<p>최종 포인트는 n포인트 입니다.</br>
@@ -361,11 +361,28 @@ $submit.onclick = () => {
 };
 
 $popup.onclick = ({ target }) => {
-  if (!target.classList.contains('continue') && !target.classList.contains('quit')) return;
+  const btn = target.classList
+  if (!btn.contains('continue') && !btn.contains('quit')) return;
+  if (btn.contains('continue')) {
+    $quizCategory.style.display = 'block';
+        $quizScore.style.display = 'none';
+        $quizStart.style.display = 'block';
+        $quizPrompt.style.display = 'none';
+        $popup.style.display = 'none';
+        renderCategory();
+      } else if (btn.contains('quit'))  {
 
-  if (target.classList.contains('continue')) console.log('continue');
-  else console.log('quit');
+      }
+  // } else if (target.classList.contains('quit'))
+  // else console.log('quit');
 };
+
+window.addEventListener('beforeunload', function (e) {
+  // Cancel the event
+  e.preventDefault();
+  // Chrome requires returnValue to be set
+  e.returnValue = 'KILL ME!';
+});
 
 // [...$continue].forEach(btn => {
 //   btn.onclick = () => {

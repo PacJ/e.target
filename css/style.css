@@ -1,8 +1,6 @@
 @charset "utf-8";
 @import url('https://necolas.github.io/normalize.css/latest/normalize.css');
-@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
-
-/* 초기화 */
+@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');/* 초기화 */
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -37,9 +35,7 @@ body {
   font-family: 'Spoqa Han Sans', 'Sans-serif';
   font-weight: 400;
   background: #ccc linear-gradient(#ccc, #eee, #fff) repeat 0 0 fixed;
-}
-
-/* 헤더 */
+}/* 헤더 */
 .header, .main-content {
   box-sizing: border-box;
   background-color: #fff;
@@ -77,9 +73,7 @@ body {
   background: lightyellow;
   width: 200px;
   padding: 10px 0 10px 0;
-}
-
-/* 메인 컨텐츠 */
+}/* 메인 컨텐츠 */
 .score-board {
   border: 1px solid black;
   position: fixed;
@@ -153,10 +147,6 @@ body {
 .quiz-start:hover {
   background: lightblue;
 }
-<<<<<<< HEAD
-.error {
-  display: none;
-=======
 .select-error {
   display: none;
   color: red;
@@ -165,12 +155,9 @@ body {
 .score-error {
   display: none;
   text-align: center;
->>>>>>> a11d8e196fca75163bde72e87c8593a21e1a2d03
   color: red;
   font-weight: 500;
-}
-
-/* 퀴즈 출제 영역 */
+}/* 퀴즈 출제 영역 */
 .quiz-prompt {
   display: none;
   margin-top: 30px;
@@ -199,19 +186,11 @@ body {
   line-height: 3rem;
   /* font-weight: 600; */
 }
-<<<<<<< HEAD
-code {
-  font-size: 1.6rem;
-  line-height: 3rem;
-  font-weight: 600;
-}
-=======
 /* code {
   font-size: 1.6rem;
   line-height: 3rem;
   font-weight: 600;
 } */
->>>>>>> a11d8e196fca75163bde72e87c8593a21e1a2d03
 .choice-list {
   /* background: skyblue; */
   margin: 0;
@@ -247,9 +226,7 @@ code {
   width: 100px;
   height: 50px;
   /* margin: 20px 0 20px 0; */
-}
-
-/* 팝업 */
+}/* 팝업 */
 .popup {
   display: none;
   background: whitesmoke;
