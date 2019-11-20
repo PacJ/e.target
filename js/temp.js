@@ -1,5 +1,5 @@
 /* ------------------------- CONSTANT ------------------------- */
-const URL = 'http://localhost:5000';
+const URL = 'http://localhost:8000';
 
 // 각 난이도 별 포인트 및 제한시간(초)
 const EASY = [10, 30];
@@ -168,7 +168,7 @@ const popup = type => {
 // 선택 가능한 카테고리를 표시한다.
 const renderCategory = () => {
   let html = '';
-
+  console.log(problems);
   // 안풀린 문제를 보유하는 카테고리를 필터하여 화면에 출력한다.
   problems.forEach((catArr, idx) => {
     const count = catArr.filter(problem => !problem.solved).length;
@@ -251,11 +251,13 @@ const runTimer = () => {
   }
 
   if (!second) {
-    bettingPoint = 0;
     quiz.solved = true;
 
+    // bettingPoint가 0으로 할당되어 allin popup에 "0포인트가 차감됩니다"띄워져 팝업호출 후에 0할당.
+    // bettingPoint = 0;
     clearInterval(intervalId);
     popup(!currentPoint ? 'allin' : 'wrong');
+    bettingPoint = 0;
     renderPoint();
   } else {
     second -= 1;
@@ -302,7 +304,7 @@ const renderQuiz = () => {
   $quizPrompt.classList.remove('hide');
 
   displayTime();
-  intervalId = setInterval(runTimer, 100);
+  intervalId = setInterval(runTimer, 1000);
   scrollDown();
 };
 
@@ -473,16 +475,23 @@ $popup.onkeyup = async ({ target, keyCode }) => {
     });
     ranking = await fetch(`${URL}/ranking`).then(res => res.json());
     console.log(ranking);
+    addClass('hide', $quizPrompt, $popup);
+    removeClass('hide', $quizRestart);
     // window.location.reload();
-    renderScoreBoard();
+    renderHonorBoard();
     // 숨길거 숨기고 보일거 보이고
     // restart 버튼
   } catch (e) {
     console.log(e);
   }
-};
-
-// restart 버튼을 클릭하면 페이지를 리로드한다.
+};// restart 버튼을 클릭하면 페이지를 리로드한다.
 $quizRestart.onclick = () => {
+  window.onbeforeunload = null;
   window.location.reload();
 };
+
+// restart 버튼을 클릭하면 페이지를 리로드하도, 리로드 경고를 주지 않는다.
+// $quizRestart.onclick = () => {
+//   window.onbeforeunload = null;
+//   window.location.reload();
+// };

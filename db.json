@@ -1,6 +1,7 @@
 {
   "problems": [
-    [{
+    [
+      {
         "id": 1,
         "category": "html",
         "point": 100,
@@ -151,7 +152,8 @@
         "solved": false
       }
     ],
-    [{
+    [
+      {
         "id": 1,
         "category": "css",
         "point": 100,
@@ -242,7 +244,8 @@
         "solved": false
       }
     ],
-    [{
+    [
+      {
         "id": 1,
         "category": "Javascript",
         "point": 100,
@@ -299,6 +302,26 @@
       "id": 2,
       "username": "Park",
       "score": 3000
+    },
+    {
+      "id": 3,
+      "username": "Jiwon",
+      "score": 300
+    },
+    {
+      "id": 4,
+      "username": "shiba",
+      "score": 200
+    },
+    {
+      "id": 5,
+      "username": "complete!",
+      "score": 300
+    },
+    {
+      "id": 6,
+      "username": "please",
+      "score": 200
     }
   ]
 }
