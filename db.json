@@ -295,8 +295,8 @@
   "ranking": [
     {
       "id": 1,
-      "username": "Jin",
-      "score": 4000
+      "username": "GOD홍빈",
+      "score": 1000000000000000
     },
     {
       "id": 2,
@@ -307,21 +307,6 @@
       "id": 3,
       "username": "Jiwon",
       "score": 300
-    },
-    {
-      "id": 4,
-      "username": "shiba",
-      "score": 200
-    },
-    {
-      "id": 5,
-      "username": "complete!",
-      "score": 300
-    },
-    {
-      "id": 6,
-      "username": "please",
-      "score": 200
     }
   ]
 }

@@ -127,7 +127,6 @@ const popup = type => {
       <div class="btn-group">
         <button class="continue">YES</button>
         <button class="quit">NO</button>
-        <button class="double-down">Double Down</button>
       </div>`;
   } else if (type === 'allin') {
     html = `<p>오답입니다.<br>
@@ -304,7 +303,7 @@ const renderQuiz = () => {
   $quizPrompt.classList.remove('hide');
 
   displayTime();
-  intervalId = setInterval(runTimer, 1000);
+  intervalId = setInterval(runTimer, 100);
   scrollDown();
 };
 
@@ -477,6 +476,7 @@ $popup.onkeyup = async ({ target, keyCode }) => {
     console.log(ranking);
     addClass('hide', $quizPrompt, $popup);
     removeClass('hide', $quizRestart);
+    window.onbeforeunload = null;
     // window.location.reload();
     renderHonorBoard();
     // 숨길거 숨기고 보일거 보이고
@@ -490,8 +490,3 @@ $quizRestart.onclick = () => {
   window.location.reload();
 };
 
-// restart 버튼을 클릭하면 페이지를 리로드하도, 리로드 경고를 주지 않는다.
-// $quizRestart.onclick = () => {
-//   window.onbeforeunload = null;
-//   window.location.reload();
-// };
