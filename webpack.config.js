@@ -27,6 +27,26 @@ module.exports = {
             plugins: ['@babel/plugin-proposal-class-properties']
           }
         }
+      },
+      {
+        test: /\.css$/,
+        use: [
+          "style-loader", // creates style nodes from JS strings
+          "css-loader",   // translates CSS into CommonJS
+          "sass-loader"   // compiles Sass to CSS, using Node Sass by default
+        ],
+        exclude: /node_modules/
+      },
+      {
+        test: /\.(png|jpg|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+            }
+          }
+        ]
       }
     ]
   },
