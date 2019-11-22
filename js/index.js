@@ -116,7 +116,7 @@ $quizStart.onclick = ({ target }) =>   {
   $selectError.style.display = 'none'; // 3. error 메시지를 display: none 처리한다.
 
   // 4. json-server에 quizType과 quizScore 상태에 해당하는 문제를 요청한다.
-  fetch('http://localhost:5000/html/1')
+  fetch('http://localhost:8000/html/1')
     .then(problem => problem.json())
   // 5. 요청한 데이터(문제)를 문제 출제 영역에 innerHTML로 삽입한다.
     .then(parsedProblem => renderQuiz(parsedProblem))
