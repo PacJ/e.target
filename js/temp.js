@@ -1,5 +1,5 @@
 /* ------------------------- CONSTANT ------------------------- */
-const URL = 'http://localhost:5000';
+const URL = 'http://localhost:8000';
 const TYPE = ['html', 'css', 'javascript', 'random'];
 
 // 각 난이도 별 포인트 및 제한시간(초)
@@ -320,7 +320,7 @@ const renderQuiz = catIdx => {
   $quizPrompt.classList.remove('hide');
 
   displayTime();
-  intervalId = setInterval(runTimer, 100);
+  intervalId = setInterval(runTimer, 1000);
   scrollDown();
 };
 

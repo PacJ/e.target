@@ -13,10 +13,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> e3019fda85920a54705462c9ce5f5bd3e3f1fa6a
 ul,
 ol {
   list-style: none;
@@ -51,29 +47,15 @@ body {
   font-family: 'Spoqa Han Sans', 'Sans-serif';
   font-weight: 400;
   background: black;
-<<<<<<< HEAD
-  /* background: #181818 linear-gradient(rgb(107, 105, 105), rgb(53, 52, 52), rgb(192, 188, 188)) repeat 0 0 fixed; */
-  /* background: #333; */
-=======
->>>>>>> e3019fda85920a54705462c9ce5f5bd3e3f1fa6a
 }
 
 /* 헤더 */
 .header,
 .main-content {
   box-sizing: border-box;
-<<<<<<< HEAD
-  /* background-color: #fff; */
-  background-image: url(../img/bg-blur.jpg);
-  background-size: 100% 100%;
-  /* position: relative; */
-  /* padding: 0 30px 50px 30px; */
-  padding: 30px;
-=======
   background-image: url(../img/bg-blur.jpg);
   background-size: 100% 100%;
   padding: 0 30px 50px 30px;
->>>>>>> e3019fda85920a54705462c9ce5f5bd3e3f1fa6a
   border-radius: 15px 15px 15px 15px;
   margin: 0 auto;
   width: 940px;
@@ -88,11 +70,6 @@ body {
   margin: 20px auto;
   padding-top: 10px;
   text-align: center;
-<<<<<<< HEAD
-  /* color: whitesmoke; */
-  caption-side: bottom;
-  color: whitesmoke;
-=======
   caption-side: bottom;
   color: whitesmoke;
 }
@@ -106,7 +83,6 @@ body {
     0 0 90px rgb(243, 8, 8),
     0 0 100px rgb(243, 8, 8),
     0 0 150px rgb(243, 8, 8);
->>>>>>> e3019fda85920a54705462c9ce5f5bd3e3f1fa6a
 }
 
 .header>h1 {
@@ -122,10 +98,6 @@ body {
 }
 
 .title {
-<<<<<<< HEAD
-  /* color: rgb(197, 34, 22); */
-=======
->>>>>>> e3019fda85920a54705462c9ce5f5bd3e3f1fa6a
   font-style: italic;
   /* text-shadow: 5px 5px black; */
 }
@@ -144,28 +116,6 @@ body {
 .hall-of-fame {
   text-align: center;
   width: 700px;
-<<<<<<< HEAD
-  /* margin: 0 auto; */
-  padding-bottom: 20px;
-  /* background-color: lightgray; */
-  padding-top: 8px;
-  margin: 0 auto 20px auto;
-  /* background: #446bb3; */
-  /* opacity: 0.8; */
-  border-radius: 15px;
-}
-
-.hall-of-fame>h2 {
-  color: whitesmoke;
-  text-shadow: 0 0 5px gold,
-    0 0 10px gold,
-    0 0 20px gold,
-    0 0 40px gold,
-    0 0 80px gold,
-    0 0 90px gold,
-    0 0 100px gold,
-    0 0 150px gold;
-=======
   padding-bottom: 20px;
   padding-top: 8px;
   margin: 0 auto 20px auto;
@@ -181,24 +131,10 @@ body {
   0 0 90px gold,
   0 0 100px gold,
   0 0 150px gold;
->>>>>>> e3019fda85920a54705462c9ce5f5bd3e3f1fa6a
 }
 
 .ranking {
   margin: auto;
-<<<<<<< HEAD
-  /* background-color : #fff; */
-  /* color : #453 */
-  color: whitesmoke;
-  text-shadow: 0 0 5px gold,
-    0 0 10px gold,
-    0 0 20px gold,
-    0 0 40px gold,
-    0 0 80px gold,
-    0 0 90px gold,
-    0 0 100px gold,
-    0 0 150px gold;
-=======
   color: whitesmoke;
   text-shadow: 0 0 5px gold,
   0 0 10px gold,
@@ -208,20 +144,12 @@ body {
   0 0 90px gold,
   0 0 100px gold,
   0 0 150px gold;
->>>>>>> e3019fda85920a54705462c9ce5f5bd3e3f1fa6a
   background: #181818;
   opacity: 0.9;
   border-radius: 1.2rem;
 }
-<<<<<<< HEAD
-
 .row th,
 .row td {
-  /* background: lightyellow; */
-=======
-.row th,
-.row td {
->>>>>>> e3019fda85920a54705462c9ce5f5bd3e3f1fa6a
   width: 200px;
   padding: 10px 0 10px 0;
 }
@@ -238,26 +166,10 @@ body {
   background: black;
   border-radius: 0.6rem;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> e3019fda85920a54705462c9ce5f5bd3e3f1fa6a
 .score-board .row th,
 .score-board .row td {
   width: 75px;
   padding: 0 0 5px 0;
-<<<<<<< HEAD
-  /* border: 1px solid black; */
-  color: white;
-  text-shadow: 0 0 5px rgb(22, 194, 36),
-    0 0 10px rgb(22, 194, 36),
-    0 0 20px rgb(22, 194, 36),
-    0 0 40px rgb(22, 194, 36),
-    0 0 80px rgb(22, 194, 36),
-    0 0 90px rgb(22, 194, 36),
-    0 0 100px rgb(22, 194, 36),
-    0 0 150px rgb(22, 194, 36);
-=======
   color: white;
   text-shadow: 0 0 5px rgb(22, 194, 36),
   0 0 10px rgb(22, 194, 36),
@@ -267,7 +179,6 @@ body {
   0 0 90px rgb(22, 194, 36),
   0 0 100px rgb(22, 194, 36),
   0 0 150px rgb(22, 194, 36);
->>>>>>> e3019fda85920a54705462c9ce5f5bd3e3f1fa6a
 }
 
 .list {
@@ -307,17 +218,9 @@ body {
   height: 100%;
   line-height: 4.7rem;
   cursor: pointer;
-<<<<<<< HEAD
-  /* background: rgba(30, 22, 54, 0.7); */
-}
-
-.list input[type="radio"],
-.choice input[type="radio"] {
-=======
 }
 .list input[type="radio"],
 .choice input[type="radio"]{
->>>>>>> e3019fda85920a54705462c9ce5f5bd3e3f1fa6a
   position: absolute;
   top: 1px;
   left: 1px;
@@ -327,23 +230,10 @@ body {
 
 .list input[type="radio"]:checked+label,
 .choice input[type="radio"]:checked+label {
-<<<<<<< HEAD
-  /* border: 1.2px solid rgb(236, 83, 83); */
-  /* border: 1.4px solid rgb(10, 2, 2); */
-  border: 1.4px solid #333;
-  box-shadow: 3px 3px 6px rgb(221, 213, 213);
-  color: rgb(236, 67, 67);
-  /* box-shadow: 1px 1px 5px red; */
-
-}
-
-/* input checked시, class="active" 추가 */
-=======
   border: 1.4px solid #333;
   box-shadow: 3px 3px 6px rgb(221, 213, 213);
   color: rgb(236, 67, 67);
 }
->>>>>>> e3019fda85920a54705462c9ce5f5bd3e3f1fa6a
 .active {
   transform: rotateY(360deg);
 }
@@ -357,24 +247,12 @@ body {
   text-align: center;
   padding-top: 115px;
   box-shadow: 3px 3px 6px #333;
-<<<<<<< HEAD
-  /* border: 1.4px solid rgb(154, 160, 161); */
-  border-radius: 8px;
-  transition: transform 1s;
-  backface-visibility: hidden;
-  /* background: whitesmoke; */
-  background-size: 99% 99%;
-  font-weight: 900;
-}
-
-=======
   border-radius: 8px;
   transition: transform 1s;
   backface-visibility: hidden;
   background-size: 99% 99%;
   font-weight: 900;
 }
->>>>>>> e3019fda85920a54705462c9ce5f5bd3e3f1fa6a
 .category-list label {
   background-image: url(../img/vGm4U3r1.jpg);
   font-size: 2.4rem;
@@ -382,19 +260,11 @@ body {
   color: #fff;
   text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> e3019fda85920a54705462c9ce5f5bd3e3f1fa6a
 .score-list label {
   background-image: url(../img/vGm4U3r2.jpg);
   text-shadow: 1px 1px 2px rgb(231, 108, 6), 0 0 1em rgb(155, 5, 224), 0 0 0.2em rgb(155, 5, 224);
   font-size: 40px;
   color: #fff;
-<<<<<<< HEAD
-  /* text-shadow: 1px 0 10px #333; */
-=======
->>>>>>> e3019fda85920a54705462c9ce5f5bd3e3f1fa6a
 }
 
 .score-list {
@@ -403,7 +273,6 @@ body {
 
 .btn-group {
   text-align: center;
-  padding-top: 20px;
 }
 .quiz-start,
 .quiz-restart {
@@ -422,35 +291,9 @@ body {
   color: whitesmoke;
   background-color: black;
 }
-<<<<<<< HEAD
-
-.quiz-start,
-.quiz-restart {
-  display: block;
-  margin: 40px auto;
-  line-height: 50px;
-  width: 180px;
-  height: 50px;
-  /* background: #2D7551; */
-  border: 0;
-  border-radius: 8px;
-  cursor: pointer;
-  outline: none;
-  font-size: 16px;
-  text-shadow: 1px 1px 6px #333;
-  font-weight: 500;
-  color: whitesmoke;
-  background-color: black;
-}
-
-.quiz-start:hover {
-  color: #f44336;
-=======
 .quiz-start:hover,
 .quiz-restart:hover {
   color: #f44336;
-  background: #fff;
->>>>>>> e3019fda85920a54705462c9ce5f5bd3e3f1fa6a
 }
 
 .quiz-restart:hover {
@@ -470,20 +313,12 @@ body {
 
 /* 퀴즈 출제 영역 */
 .quiz-prompt {
-<<<<<<< HEAD
-  /* display: none; */
-=======
->>>>>>> e3019fda85920a54705462c9ce5f5bd3e3f1fa6a
   margin-top: 20px;
   position: relative;
   border: 1px solid rgb(37, 42, 43);
   border-radius: 8px;
   color: whitesmoke;
   background: #181818;
-<<<<<<< HEAD
-  /* text-align: center; */
-=======
->>>>>>> e3019fda85920a54705462c9ce5f5bd3e3f1fa6a
 }
 
 .quiz {
@@ -505,18 +340,7 @@ body {
   font-size: 1.6rem;
   line-height: 3rem;
 }
-<<<<<<< HEAD
-
-.quiz-wrapper>h4 {
-  font-size: 1.6rem;
-  line-height: 3rem;
-  margin: 0 2rem;
-}
-
-/* code {
-=======
 .quiz-wrapper > h4 {
->>>>>>> e3019fda85920a54705462c9ce5f5bd3e3f1fa6a
   font-size: 1.6rem;
   line-height: 3rem;
   margin: 0 2rem;
@@ -539,36 +363,18 @@ body {
   display: block;
   border: none;
   border-radius: 0.5rem;
-<<<<<<< HEAD
-  /* background-color: rgb(193, 18, 209); */
   background-color: rgb(90, 88, 88);
   color: white;
-  /* opacity: 0.8; */
-=======
-  background-color: rgb(90, 88, 88);
-  color: white;
->>>>>>> e3019fda85920a54705462c9ce5f5bd3e3f1fa6a
   margin: 0 auto 20px auto;
   width: 100px;
   height: 50px;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> e3019fda85920a54705462c9ce5f5bd3e3f1fa6a
 .submit:hover {
   cursor: pointer;
   color: #181818;
 }
-<<<<<<< HEAD
-
 /* 팝업 */
 .popup {
-  /* display: none; */
-=======
-/* 팝업 */
-.popup {
->>>>>>> e3019fda85920a54705462c9ce5f5bd3e3f1fa6a
   background: black;
   box-shadow: 1px 1px 4px rgb(221, 213, 213);
   border: 1px solid rgb(255, 255, 255);
@@ -579,11 +385,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-<<<<<<< HEAD
-  /* border: 2px solid rgb(37, 42, 43); */
-  /* border: 2px solid #9AD3DE; */
-=======
->>>>>>> e3019fda85920a54705462c9ce5f5bd3e3f1fa6a
   border-radius: 8px;
 }
 
@@ -595,31 +396,17 @@ body {
 .popup>span {
   display: inline-block;
 }
-<<<<<<< HEAD
-
-.popup>div>button {
-=======
 .popup > div > button {
->>>>>>> e3019fda85920a54705462c9ce5f5bd3e3f1fa6a
   background: whitesmoke;
   color: #181818;
   border: 0;
   border-radius: 4px;
   padding: 5px 10px;
-<<<<<<< HEAD
-  /* color: #FFFFFF; */
-=======
->>>>>>> e3019fda85920a54705462c9ce5f5bd3e3f1fa6a
   cursor: pointer;
   outline: none;
   margin-left: 1.2rem;
 }
-<<<<<<< HEAD
-
-.popup>div>button:hover {
-=======
 .popup > div > button:hover {
->>>>>>> e3019fda85920a54705462c9ce5f5bd3e3f1fa6a
   background: #181818;
   color: whitesmoke;
 }
